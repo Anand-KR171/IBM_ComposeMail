@@ -1,0 +1,107 @@
+Started by user admin
+Running as SYSTEM
+Building in workspace C:\Users\AnandKR\.jenkins\workspace\IBM_Project
+The recommended git tool is: NONE
+using credential git
+Cloning the remote Git repository
+Cloning repository https://github.com/Anand-KR171/IBM_ComposeMail.git
+ > C:\Program Files\Git\cmd\git.exe init C:\Users\AnandKR\.jenkins\workspace\IBM_Project # timeout=10
+Fetching upstream changes from https://github.com/Anand-KR171/IBM_ComposeMail.git
+ > C:\Program Files\Git\cmd\git.exe --version # timeout=10
+ > git --version # 'git version 2.27.0.windows.1'
+using GIT_ASKPASS to set credentials git
+ > C:\Program Files\Git\cmd\git.exe fetch --tags --force --progress -- https://github.com/Anand-KR171/IBM_ComposeMail.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Program Files\Git\cmd\git.exe config remote.origin.url https://github.com/Anand-KR171/IBM_ComposeMail.git # timeout=10
+ > C:\Program Files\Git\cmd\git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > C:\Program Files\Git\cmd\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision a75394402066fc7cde6743b5c0bf6aa934cf1d97 (refs/remotes/origin/master)
+ > C:\Program Files\Git\cmd\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\cmd\git.exe checkout -f a75394402066fc7cde6743b5c0bf6aa934cf1d97 # timeout=10
+Commit message: "Pushing Cucumber Code"
+First time build. Skipping changelog.
+Parsing POMs
+Discovered a new module sdet:course course
+Modules changed, recalculating dependency graph
+Established TCP socket on 54553
+[IBM] $ "C:\Program Files\Java\jdk1.8.0_201/bin/java" -cp "C:\Users\AnandKR\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-agent-1.13.jar;C:\Program Files\apache-maven-3.5.3\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\apache-maven-3.5.3/conf/logging" jenkins.maven3.agent.Maven35Main "C:\Program Files\apache-maven-3.5.3" C:\Users\AnandKR\.jenkins\war\WEB-INF\lib\remoting-4.3.jar C:\Users\AnandKR\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven35-interceptor-1.13.jar C:\Users\AnandKR\.jenkins\plugins\maven-plugin\WEB-INF\lib\maven3-interceptor-commons-1.13.jar 54553
+<===[JENKINS REMOTING CAPACITY]===>���channel started
+Executing Maven:  -B -f C:\Users\AnandKR\.jenkins\workspace\IBM_Project\IBM\pom.xml clean test
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------------< sdet:course >-----------------------------
+[INFO] Building course 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ course ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ course ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\AnandKR\.jenkins\workspace\IBM_Project\IBM\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ course ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ course ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ course ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 2 source files to C:\Users\AnandKR\.jenkins\workspace\IBM_Project\IBM\target\test-classes
+[INFO] /C:/Users/AnandKR/.jenkins/workspace/IBM_Project/IBM/src/test/java/stepDefiniation/Steps.java: C:\Users\AnandKR\.jenkins\workspace\IBM_Project\IBM\src\test\java\stepDefiniation\Steps.java uses or overrides a deprecated API.
+[INFO] /C:/Users/AnandKR/.jenkins/workspace/IBM_Project/IBM/src/test/java/stepDefiniation/Steps.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ course ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running runner.Test_Runner
+Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 43787
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1613151623.322][WARNING]: This version of ChromeDriver has not been tested with Chrome version 88.
+Feb 12, 2021 11:10:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Opened Browser
+Navigate to Login page
+Entered Username
+Entered Password
+Clicked on Login Button
+Clicked on Login Button
+Email is Matching :anankr1@in.ibm.com
+true
+The message has been sent Successfully
+???????????????????????????????????????????????????????????????????????????????
+? Share your Cucumber Report with your team at https://reports.cucumber.io    ?
+? Activate publishing with one of the following:                              ?
+?                                                                             ?
+? src/test/resources/cucumber.properties:    cucumber.publish.enabled=true    ?
+? Environment variable:                      CUCUMBER_PUBLISH_ENABLED=true    ?
+? JUnit:                                     @CucumberOptions(publish = true) ?
+?                                                                             ?
+? More information at https://reports.cucumber.io/docs/cucumber-jvm           ?
+?                                                                             ?
+? To disable this message, add cucumber.publish.quiet=true to                 ?
+? src/test/resources/cucumber.properties                                      ?
+???????????????????????????????????????????????????????????????????????????????
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.444 s - in runner.Test_Runner
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[JENKINS] Recording test results
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 42.860 s
+[INFO] Finished at: 2021-02-12T23:10:53+05:30
+[INFO] ------------------------------------------------------------------------
+Waiting for Jenkins to finish collecting data
+[JENKINS] Archiving C:\Users\AnandKR\.jenkins\workspace\IBM_Project\IBM\pom.xml to sdet/course/0.0.1-SNAPSHOT/course-0.0.1-SNAPSHOT.pom
+channel stopped
+Finished: SUCCESS
