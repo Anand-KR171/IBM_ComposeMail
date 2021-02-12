@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.981">
+<testcase classname="To Send an Email" name="To test Login with valid scenario" time="28.731">
+<system-out><![CDATA[Given we should be in the home page.........................................passed
+When Enter the valid name "AnandKR1IBM".....................................passed
+And Enter the valid password "10April5083@".................................passed
+And Click on the Validbutton................................................passed
+And I see the name as "anankr1@in.ibm.com"..................................passed
+And go to compose...........................................................passed
+And Enter the send to.......................................................passed
+And Enter the subject.......................................................passed
+And Add the body message "Hello Mr. Naveen 
+      This is for Testing 
+
+ From, 
+ Anand KR".passed
+Then Click on send message..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

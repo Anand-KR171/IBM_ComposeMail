@@ -1,0 +1,177 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9510000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "we should be in the home page",
+            "match": {
+              "location": "stepDefiniation.Steps.we_should_be_in_the_home_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-12T16:23:57.000Z",
+        "line": 19,
+        "name": "To test Login with valid scenario",
+        "description": "",
+        "id": "to-send-an-email;to-test-login-with-valid-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 132000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter the valid name \"AnandKR1IBM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AnandKR1IBM\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefiniation.Steps.enter_the_valid_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 178000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter the valid password \"10April5083@\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10April5083@\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefiniation.Steps.enter_the_valid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3513000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on the Validbutton",
+            "match": {
+              "location": "stepDefiniation.Steps.click_on_the_validbutton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 207000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I see the name as \"anankr1@in.ibm.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"anankr1@in.ibm.com\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepDefiniation.Steps.i_see_the_name_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2787000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "go to compose",
+            "match": {
+              "location": "stepDefiniation.Steps.go_to_compose()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2272000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Enter the send to",
+            "match": {
+              "location": "stepDefiniation.Steps.enter_the_send_to()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5128000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Enter the subject",
+            "match": {
+              "location": "stepDefiniation.Steps.enter_the_subject()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 392000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Add the body message \"Hello Mr. Naveen \n      This is for Testing \n\n From, \n Anand KR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hello Mr. Naveen \n      This is for Testing \n\n From, \n Anand KR\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefiniation.Steps.add_the_body_message(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4503000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Click on send message",
+            "match": {
+              "location": "stepDefiniation.Steps.click_on_send_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To Send an Email",
+    "description": "",
+    "id": "to-send-an-email",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Compose_Mail/Compose_Mail.feature",
+    "tags": []
+  }
+]
