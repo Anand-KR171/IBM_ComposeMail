@@ -55,11 +55,11 @@ public class Steps {
 	@When("go to compose")
 	public void go_to_compose() {
 		String text = driver.findElement(By.xpath("//*[@id='profile_block']/div[1]/a")).getAttribute("aria-expanded");
-		System.out.println(text);
 		if (text.contains("true")) {
 			driver.findElement(By.xpath("//*[@id='profile_block']/div[1]/a")).click();
 		}
 		driver.findElement(By.xpath("//*[@id='profileCollapse']/div/ul/li[2]/a")).click();
+		System.out.println("Clicked on Compose");
 	}
 
 	@When("Enter the send to")
@@ -69,12 +69,14 @@ public class Steps {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id='compose_message']/fieldset/div[1]/div[1]/span/span[1]/span/ul/li/input"))
 				.sendKeys(Keys.ENTER);
+		System.out.println("Entered and selected the SEND TO");
 	}
 
 	@When("Enter the subject")
 	public void enter_the_subject() throws InterruptedException {
 		driver.findElement(By.id("compose_message_title")).sendKeys("Hi for Testing");
 		Thread.sleep(5000);
+		System.out.println("Entered the Subject");
 	}
 
 	@When("Add the body message {string}")
@@ -82,7 +84,7 @@ public class Steps {
 		driver.switchTo().frame(0);
 		driver.findElement(By.xpath("/html/body")).sendKeys(string);
 		driver.switchTo().defaultContent();
-
+		System.out.println("Entered BODY message");
 	}
 
 	@SuppressWarnings("deprecation")
@@ -98,5 +100,6 @@ public class Steps {
 			driver.close();
 			throw new Exception("Failed to send the meassage");
 		}
+		System.out.println("Clicked on SEND MESSAGE button");
 	}
 }
